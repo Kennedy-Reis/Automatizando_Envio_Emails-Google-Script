@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Envio de Certificado</title>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width", initial-scale=1>
+
+        <style>
+            .capa{
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+                padding: 10px 20px;
+                background-color: #6a4aba;
+            }
+            .capa h2{
+                font-family: 'Open Sans', sans-serif;
+                margin: 0px; 
+                width: 400px;
+                color: rgb(255, 255, 255);
+                font-size: 24px;
+            }
+
+            .container-nome{
+                display: inline-block;
+            }
+
+            .corpo-email{
+                padding: 30px 41px;
+                line-height: 1.5rem;
+                font-family: sans-serif;
+                font-size: 17px;
+            }
+
+            .paragrafo-email{
+                color: rgb(44, 44, 44);
+                text-align: justify;
+                font-family: 'Open Sans', sans-serif; 
+            }
+
+            h1{
+                margin: 0px;
+                font-weight: bold;
+                font-size: 20px;
+                font-family: 'Open Sans', sans-serif;
+                padding-top: 5px;
+                padding-bottom: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: rgb(34, 34, 34);
+            }
+
+            .footer{
+                padding: 30px 2px 20px 2px;
+            }
+            .footer p{
+                font-family: sans-serif;
+                font-size: 11px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .footer .icons-social {
+                width: 36.75px;
+                height: 35.25px;
+                border-radius: 100px;
+                cursor: pointer;
+            }
+
+            .espaco-icons-social{
+                display: inline-block;
+                padding: 16px;
+            }
+
+            .medalha{
+                width: 54.59px;
+                height: 54.59px;
+                background-color: white;
+                border-radius: 100px;
+                padding: 7px;
+            }
+
+            .link:hover{
+                cursor: pointer;
+            }
+
+            .link{
+                text-decoration: none;
+                color: black;
+            }
+
+            /* MEDIA QUERIES */
+
+            @media (min-width: 0px) and (max-width: 375px) {
+                .capa{
+                    padding: 10px 0px;
+                }
+                .capa h2{
+                    font-size: 13px;
+                    width: auto;
+                    padding-left: 22px;
+                    padding-right: 30px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                .medalha{
+                    width: 39.09px;
+                    height: 39.08px;
+                    padding: 2px;
+                }
+                .footer{
+                    font-size: 8px;
+                    padding: 20px 2px 2px 2px;
+                }
+    
+                .footer .icons-social{
+                    width: 22.05px;
+                    height: 21.14px;
+                }
+                .espaco-icons-social{
+                    display: inline;
+                    padding: 2px;
+                }
+                .contato h1{
+                    font-size: 14px;
+                }
+                .despedidas h1{  
+                    font-size: 13px;
+                    padding-bottom: 10px;
+                }
+                .corpo-email{
+                    padding: 20px 20px 9px 20px;
+                }
+
+                .paragrafo-email{
+                    font-size: 13px;
+                    text-align: justify;
+                }
+            }
+
+            @media (min-width: 376px)  and (max-width: 599px){
+
+                .capa{
+                    padding: 15px 0px;
+                }
+
+                .capa h2{
+                    font-size: 17px;
+                    width: auto;
+                    padding-left: 11px;
+                    padding-right: 0px;
+                }
+                .footer{
+                    font-size: 10px;
+                    padding: 20px 2px 2px 2px;
+                }
+                .footer .icons-social {
+                    width: 29.39px;
+                    height: 28.19px;
+                }
+                .footer .espaco-icons-social{
+                    padding: 7px;
+                }
+                .medalha{
+                    width: 38.09px;
+                    height: 38.08px;
+                    padding: 2px;
+                }
+                .paragrafo-email{
+                    font-size: 15px;
+                    text-align: justify;
+                }
+                
+                .corpo-email{
+                    padding: 20px 30px;
+                }
+
+                .despedidas h1{  
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                }
+                .contato h1{
+                    font-size: 15px;
+                }
+            }
+
+            /*footer alinhado*/
+            @media (min-width: 268px) and (max-width: 300px){
+                .footer .icons-social{
+                    width: 19.59px;
+                    height: 18.78px;
+                }
+                .footer p{
+                    font-size: 8px;
+                }
+                .espaco-icons-social{
+                    display: inline;
+                    padding: 1px; 
+                }
+            }
+
+        </style>
+
+    </head>
+
+    <body bgcolor="#ffffff">
+
+        <table border="0" cellpadding="0"
+        cellspacing="0" style="max-width: 700px; width:100%;" align="center" valign = "middle" class="capa">
+            <tr valign="middle" class="container-nome">
+                <td style="display: inline-block;">
+                    <img src="https://hfsgjl.stripocdn.email/content/guids/CABINET_5d55556fee0b4008183ad75d27ea9324/images/23571593104671109.png" class="medalha">
+                </td>
+                
+                <td style="display: inline-block;">
+                    <h2>Parabéns <?= nome ?> !</h2>
+                </td>    
+            </tr>          
+        </table>
+
+         <!--*************************INÍCIO DO CORPO DO E-MAIL****************************-->
+        <table border="0" cellpadding="0"cellspacing="0" style="max-width: 700px; width:100%;" align="center" bgcolor="#F8F8F8">
+
+            <tr align="left" valign="middle">
+                <td class="corpo-email">
+                    <p class="paragrafo-email">
+                        Nós do time Template GS agradecemos a sua presença no curso de <strong> <?= nomecurso ?></strong>. 
+                        <br><br>
+                        Assim estamos anexando neste e-mail o seu certificado.
+                        <br><br>
+                        Estaremos mantendo contato com os próximos cursos que vamos oferecer!
+                        <br> 
+                    </p>
+                </td>    
+            </tr>
+        </table>
+
+        <table border="0" cellpadding="0"
+        cellspacing="0" style="max-width: 700px; width:100%;" align="center" bgcolor="#F8F8F8">
+
+            <tr align="center" valign="middle" class="despedidas">
+                <td>
+                    <h1 style="color: rgb(41, 41, 41);">Ficamos agradecidos pela sua presença!</h1>
+                </td>   
+            </tr>
+        </table>
+    
+       <table border="0" cellpadding="0"
+        cellspacing="0" style="max-width: 700px; width:100%;" align="center" bgcolor="#F8F8F8" class="contato">
+            <tr align="center" valign="middle">
+                <td>
+                    <h1 style="font-family: 'Righteous', cursive; font-size: 1.5rem; color: #6a4aba;">Template GS<br></h1>
+                </td>    
+            </tr>
+        </table>
+        
+        <!--*************************FOOTER REDES SOCIAIS ****************************-->
+        <table border="0" cellpadding="0"
+        cellspacing="0" style="max-width: 700px; width:100%;" align="center" bgcolor="#6a4aba" class="footer">
+
+            <tr valign="middle" align="center">
+               
+                
+                <td style="display: inline-block;" align="center">
+                    <a target="_blank" href="https://www.linkedin.com/in/kennedyareis" class= "link">
+                        <img alt="Foto Linkedin" src="https://i1.wp.com/fenavist.org.br/wp-content/uploads/2018/05/linkedin-white-logo-1.png" class="icons-social" >
+                        <p>Kennedy Reis</p>
+                    </a>
+                </td>
+
+                <td class="espaco-icons-social">
+                    &nbsp;
+                </td> <!--controla o espaçamento entre as imagens-->
+
+                <td style="display: inline-block;" align="center">
+                    <a target="_blank" href="https://www.linkedin.com/in/pamelaotero2019/" class= "link">
+                        <img alt="Foto Linkedin" src="https://i1.wp.com/fenavist.org.br/wp-content/uploads/2018/05/linkedin-white-logo-1.png" class="icons-social" >
+                        <p>Pamela Otéro</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
